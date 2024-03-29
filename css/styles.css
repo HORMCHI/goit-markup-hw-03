@@ -21,6 +21,9 @@ body {
 
 ul {
   list-style-type: none;
+  margin-top: 0;
+  margin-bottom: 0;
+  padding-left: 0;
 }
 
 a {
@@ -28,6 +31,24 @@ a {
 }
 address {
   font-style: normal;
+}
+
+p,
+h1,
+h2,
+h3,
+h4,
+h5,
+h6 {
+  margin-top: 0;
+  margin-bottom: 0;
+}
+
+.container {
+  width: 1158px;
+  padding-left: 15px;
+  padding-right: 15px;
+  margin: 0 auto;
 }
 
 /* ==============LOGOTYPE============= */
@@ -58,6 +79,12 @@ address {
 
 .logo-footer-studio {
   color: var(--light);
+}
+
+/* ==========HEADER========== */
+
+.page-header {
+  padding: 24px 0 24px 0;
 }
 
 /* ===========NAVIGATION============ */
@@ -92,6 +119,8 @@ address {
 
 .hero-section {
   background-color: var(--dark);
+  padding: 188px 0 188px 0;
+  margin: 0 auto;
 }
 
 .hero-text {
@@ -101,6 +130,9 @@ address {
   letter-spacing: 0.02em;
   text-align: center;
   color: var(--white-background);
+  max-width: 496px;
+  padding-bottom: 48px;
+  margin: 0 auto;
 }
 
 /* ============BUTTON=========== */
@@ -113,6 +145,8 @@ address {
   color: var(--white-background);
   background-color: var(--primary-brand);
   cursor: pointer;
+  margin: 0 auto;
+  display: block;
 }
 
 .hero-btn-link:hover,
@@ -124,10 +158,44 @@ address {
 
 .team-section {
   background-color: var(--light);
+  padding: 120px 0 120px 0;
+}
+
+.portfolio-section {
+  padding-bottom: 120px;
+}
+
+.team-list {
+  padding-top: 72px;
 }
 
 .team-item {
   background-color: var(--white-background);
+}
+
+.footer-section {
+  background-color: var(--dark);
+  height: 312px;
+}
+
+.footer-item {
+  max-width: 264px;
+  padding-top: 100px;
+}
+
+.about {
+  padding: 120px 0 120px 0;
+}
+
+.about-item {
+  max-width: 264px;
+}
+
+.portfolio-list {
+  padding-top: 60px;
+}
+
+.portfolio-item {
 }
 
 /* =======TEXT-SECTIONS====== */
@@ -138,6 +206,8 @@ address {
   line-height: 1.2;
   letter-spacing: 0.02em;
   color: var(--dark);
+  padding-top: 32px;
+  padding-bottom: 8px;
 }
 
 .description {
@@ -170,6 +240,8 @@ address {
   letter-spacing: 0.02em;
   color: var(--dark);
   text-align: center;
+  padding-top: 32px;
+  padding-bottom: 8px;
 }
 
 .footer-description {
@@ -177,8 +249,5 @@ address {
   line-height: 1.5;
   letter-spacing: 0.02em;
   color: var(--light);
-}
-
-.footer-section {
-  background-color: var(--dark);
+  padding-top: 16px;
 }
