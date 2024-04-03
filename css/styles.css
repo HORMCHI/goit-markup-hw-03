@@ -19,13 +19,6 @@ body {
   color: var(--text);
 }
 
-ul {
-  list-style-type: none;
-  margin-top: 0;
-  margin-bottom: 0;
-  padding-left: 0;
-}
-
 a {
   text-decoration: none;
 }
@@ -42,6 +35,13 @@ h5,
 h6 {
   margin-top: 0;
   margin-bottom: 0;
+}
+
+.list {
+  list-style-type: none;
+  margin-top: 0;
+  margin-bottom: 0;
+  padding-left: 0;
 }
 
 .container {
@@ -83,18 +83,38 @@ h6 {
 
 /* ==========HEADER========== */
 
+.page-menu {
+  display: flex;
+  align-items: center;
+}
 .page-header {
   padding: 24px 0 24px 0;
 }
 
-/* ===========NAVIGATION============ */
+/* ===========NAVIGATION-MENU============ */
+.main-menu {
+  display: flex;
+  align-items: center;
+}
 
-.menu-link {
+.menu-list {
+  display: flex;
+  margin-left: 76px;
+}
+
+.menu-list .item + .item {
+  margin-left: 40px;
+}
+
+.menu-list .menu-link {
+  display: block;
   font-weight: 500;
   font-size: 16px;
   line-height: 1.5;
   letter-spacing: 0.02em;
   color: var(--dark);
+  padding-top: 24px;
+  padding-bottom: 24px;
 }
 
 .menu-link:hover,
@@ -110,9 +130,22 @@ h6 {
   color: var(--text);
 }
 
+.address-list {
+  display: flex;
+}
+
+.address-list .item + .item {
+  padding-left: 40px;
+}
+
 .menu-address-list:hover,
 .menu-address-list:focus {
   color: var(--pressed-state);
+}
+
+.menu-address {
+  display: flex;
+  margin-left: auto;
 }
 
 /* ===========HERO========== */
@@ -147,6 +180,10 @@ h6 {
   cursor: pointer;
   margin: 0 auto;
   display: block;
+  border-radius: 4px;
+  padding: 16px 32px;
+  height: 59px;
+  box-shadow: 0 4px 4px 0 rgba(0, 0, 0, 0.15);
 }
 
 .hero-btn-link:hover,
@@ -156,13 +193,11 @@ h6 {
 
 /* ==========SECTION========== */
 
+/* ====TEAM-SECTION==== */
+
 .team-section {
   background-color: var(--light);
   padding: 120px 0 120px 0;
-}
-
-.portfolio-section {
-  padding-bottom: 120px;
 }
 
 .team-list {
@@ -173,6 +208,38 @@ h6 {
   background-color: var(--white-background);
 }
 
+/* ====ABOUT-SECTION==== */
+
+.about {
+  padding: 120px 0 120px 0;
+}
+
+.about-list {
+  display: flex;
+  justify-content: center;
+}
+
+.about-list .about-item + .about-item {
+  margin-left: 12px;
+}
+
+.about-item {
+  max-width: 264px;
+  display: block;
+}
+
+/* ====PORTFOLIO-SECTION==== */
+
+.portfolio-section {
+  padding-bottom: 120px;
+}
+
+.portfolio-list {
+  padding-top: 60px;
+}
+
+/* ====FOOTER==== */
+
 .footer-section {
   background-color: var(--dark);
   height: 312px;
@@ -181,21 +248,6 @@ h6 {
 .footer-item {
   max-width: 264px;
   padding-top: 100px;
-}
-
-.about {
-  padding: 120px 0 120px 0;
-}
-
-.about-item {
-  max-width: 264px;
-}
-
-.portfolio-list {
-  padding-top: 60px;
-}
-
-.portfolio-item {
 }
 
 /* =======TEXT-SECTIONS====== */
