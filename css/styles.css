@@ -37,6 +37,10 @@ h6 {
   margin-bottom: 0;
 }
 
+img {
+  display: block;
+}
+
 .list {
   list-style-type: none;
   margin-top: 0;
@@ -202,10 +206,19 @@ h6 {
 
 .team-list {
   padding-top: 72px;
+  display: flex;
+}
+
+.team-list .team-item + .team-item {
+  margin-left: 24px;
 }
 
 .team-item {
   background-color: var(--white-background);
+  border-radius: 0 0 4px 4px;
+  padding-bottom: 32px;
+  box-shadow: 0 2px 1px 0 rgba(46, 47, 66, 0.08),
+    0 1px 1px 0 rgba(46, 47, 66, 0.16), 0 1px 6px 0 rgba(46, 47, 66, 0.08);
 }
 
 /* ====ABOUT-SECTION==== */
@@ -236,6 +249,28 @@ h6 {
 
 .portfolio-list {
   padding-top: 60px;
+  display: flex;
+  flex-wrap: wrap;
+  /* justify-content: space-between; */
+}
+
+.portfolio-item {
+  padding: 32px 16px;
+  /* box-shadow: 0 4px 4px 0 rgba(0, 0, 0, 0.25); */
+  border-bottom: 1px solid var(--accent);
+  border-left: 1px solid var(--accent);
+  border-right: 1px solid var(--accent);
+  width: 360px;
+  margin-right: 24px;
+  margin-bottom: 60px;
+}
+
+.portfolio-item:nth-child(3n) {
+  margin-right: 0px;
+}
+
+.portfolio-item:nth-last-child(-n + 3) {
+  margin-bottom: 0px;
 }
 
 /* ====FOOTER==== */
