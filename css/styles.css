@@ -65,6 +65,7 @@ img {
   text-transform: uppercase;
   color: var(--primary-brand);
   line-height: 1.17;
+  margin-right: 76px;
 }
 
 .logo-studio {
@@ -93,6 +94,7 @@ img {
 }
 .page-header {
   padding: 24px 0 24px 0;
+  border-bottom: 1px solid #e7e9fc;
 }
 
 /* ===========NAVIGATION-MENU============ */
@@ -103,7 +105,6 @@ img {
 
 .menu-list {
   display: flex;
-  margin-left: 76px;
 }
 
 .menu-list .item + .item {
@@ -175,6 +176,9 @@ img {
 /* ============BUTTON=========== */
 
 .hero-btn-link {
+  min-width: 169px;
+  height: 56px;
+  border: none;
   font-weight: 500;
   font-size: 16px;
   line-height: 1.5;
@@ -216,9 +220,12 @@ img {
 .team-item {
   background-color: var(--white-background);
   border-radius: 0 0 4px 4px;
-  padding-bottom: 32px;
   box-shadow: 0 2px 1px 0 rgba(46, 47, 66, 0.08),
     0 1px 1px 0 rgba(46, 47, 66, 0.16), 0 1px 6px 0 rgba(46, 47, 66, 0.08);
+}
+
+.team-card {
+  padding: 32px 0;
 }
 
 /* ====ABOUT-SECTION==== */
@@ -233,7 +240,7 @@ img {
 }
 
 .about-list .about-item + .about-item {
-  margin-left: 12px;
+  margin-right: 24px;
 }
 
 .about-item {
@@ -244,7 +251,8 @@ img {
 /* ====PORTFOLIO-SECTION==== */
 
 .portfolio-section {
-  padding-bottom: 120px;
+  /* padding-bottom: 120px; */
+  padding: 120px 0 120px 0;
 }
 
 .portfolio-list {
@@ -255,14 +263,9 @@ img {
 }
 
 .portfolio-item {
-  padding: 32px 16px;
-  /* box-shadow: 0 4px 4px 0 rgba(0, 0, 0, 0.25); */
-  border-bottom: 1px solid var(--accent);
-  border-left: 1px solid var(--accent);
-  border-right: 1px solid var(--accent);
   width: 360px;
   margin-right: 24px;
-  margin-bottom: 60px;
+  margin-bottom: 48px;
 }
 
 .portfolio-item:nth-child(3n) {
@@ -271,6 +274,13 @@ img {
 
 .portfolio-item:nth-last-child(-n + 3) {
   margin-bottom: 0px;
+}
+
+.portfolio-card {
+  padding: 32px 16px;
+  border: 1px solid #e7e9fc;
+  border-top: none;
+  margin-bottom: 8px;
 }
 
 /* ====FOOTER==== */
@@ -294,7 +304,7 @@ img {
   letter-spacing: 0.02em;
   color: var(--dark);
   padding-top: 32px;
-  padding-bottom: 8px;
+  margin-bottom: 8px;
 }
 
 .description {
@@ -328,7 +338,7 @@ img {
   color: var(--dark);
   text-align: center;
   padding-top: 32px;
-  padding-bottom: 8px;
+  margin-bottom: 8px;
 }
 
 .footer-description {
